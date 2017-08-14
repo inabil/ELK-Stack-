@@ -1,0 +1,10 @@
+input{
+    file {
+	path => "/var/log/windows.log"
+}
+}
+
+output {
+    elasticsearch { hosts => ["localhost:9100"] }
+    stdout { codec => rubydebug }
+}

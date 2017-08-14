@@ -1,0 +1,17 @@
+{
+  "network": {
+    "servers": [ "127.0.0.1:4433" ],
+    "ssl ca": "/usr/local/etc/logstash/keystore.jks",
+    "timeout": 15
+  },
+  "files": [
+    {
+      "paths": [ "/var/log/windows.log" ],
+      "fields": { "type": "nginx" }
+    },
+{
+    "paths":["/var/log/192.168.1.235.log"],
+    "fields":{"type": "unix1"}
+}
+  ]
+}

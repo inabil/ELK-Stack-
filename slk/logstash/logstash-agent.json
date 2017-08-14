@@ -1,0 +1,13 @@
+{
+  "network": {
+    "servers": [ "192.168.1.22:4433" ],
+    "ssl ca": "/usr/local/etc/logstash/keystore.jks",
+    "timeout": 15
+  },
+  "files": [
+    {
+      "paths": [ "/var/log/myapp.log" ],
+      "fields": { "type": "myapp" }
+    }
+  ]
+}
